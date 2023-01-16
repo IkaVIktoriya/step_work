@@ -1,0 +1,84 @@
+@keyframes shadow {
+    from {text-shadow: 0 0 3px grey;}
+    50% {text-shadow: 0 0 50px gray;}
+    to {text-shadow: 0 0 3px gray;}
+}
+@keyframes example {
+    from {
+        background-color: blueviolet;
+        box-shadow: 5px 5px red;
+    }
+    25% {background-color: blue;}
+    50% {
+        background-color: aqua;
+        transform: translate(55px);
+        box-shadow: 10px 10px orange;
+    }
+    75% {background-color: aquamarine;}
+    to {
+        background-color: blueviolet;
+        box-shadow: 5px 5px red;
+        transform: translate(0px);
+    }
+}
+@keyframes forpic {
+    from {transform: translateX(0px);}
+    50% {transform: translateX(200px);}
+    to {transform: translateY(-600px);}
+}
+@keyframes pic-2 {
+    from {transform: rotate(0);}
+    50% {transform: rotate(360deg);}
+    75% {transform: rotate(360deg);}
+    to {transform: rotate(360deg)}
+}
+@keyframes forbtn {
+    from {background-color: bisque;}
+    50% {background-color: rgb(47, 240, 47);
+    border-radius: 20%;}
+    to {background-color: green;
+    border-radius: 50%;}
+}
+
+
+.link {
+    font-size: 60px;
+    color: black ;
+    
+}
+a:hover {
+    
+    animation: shadow 2s 1 ease;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    animation: example 4s infinite ease-in-out;
+}
+
+.pic {
+    width: 400px;
+    margin-top: 100px;
+    animation: forpic 3s infinite ease-in;
+}
+.pic-2 {
+    width: 350px;
+    margin-top: 200px;
+    animation: pic-2 1s infinite ease-in-out;
+}
+.btn {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    margin-left: 50px;
+    border: none;
+
+}
+.btn:focus {
+    animation: forbtn 1s infinite ease;
+
+}
+.div {
+    margin-top: 50px;
+}
